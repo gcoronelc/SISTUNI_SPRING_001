@@ -20,43 +20,41 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class HomeController {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
+
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
-		
+
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
+
 		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
-		
-		model.addAttribute("saludo","Feliz navidad.");
-		
+
+		model.addAttribute("serverTime", formattedDate);
+
+		model.addAttribute("saludo", "Feliz navidad.");
+
 		return "gustavo";
 	}
-	
-	
-	@RequestMapping(value="sumar.gustavo", method=RequestMethod.POST)
-	public String sumar(
-	   HttpServletRequest request, HttpServletResponse response, Model model){
-	  // Datos
-	  int n1 = Integer.parseInt(request.getParameter("n1"));
-	  int n2 = Integer.parseInt(request.getParameter("n2"));
-	  // Proceso
-	  int suma = n1 + n2;
-	  // Modelo
-	  model.addAttribute("n1", n1);
-	  model.addAttribute("n2", n2);
-	  model.addAttribute("suma", suma);
-	  // Forward
-	  return "gustavo";
+
+	@RequestMapping(value = "sumar.gustavo", method = RequestMethod.POST)
+	public String sumar(HttpServletRequest request, Model model) {
+		// Datos
+		int n1 = Integer.parseInt(request.getParameter("n1"));
+		int n2 = Integer.parseInt(request.getParameter("n2"));
+		// Proceso
+		int suma = n1 + n2;
+		// Modelo
+		model.addAttribute("n1", n1);
+		model.addAttribute("n2", n2);
+		model.addAttribute("suma", suma);
+		// Forward
+		return "gustavo";
 	}
-	
+
 }

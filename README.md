@@ -13,3 +13,10 @@ Curso de Spring Framework en SistemasUNI en DIC-2015.
 - Spring Core con XML
 - Spring Core con Anotaciones
 - Intro a Spring MVC
+
+# SESION 02 26/DIC/2015
+
+- Revisar el ejemplo MVC 
+- El objeto ModelAndView
+- @RequestParam
+
