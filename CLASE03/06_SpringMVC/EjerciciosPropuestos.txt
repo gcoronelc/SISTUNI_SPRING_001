@@ -1,0 +1,21 @@
+Ejercicio 1:
+------------
+
+Desarrollar una aplicación utilizando Spring MVC que permita
+mostrar la tabla de multiplicar de un número.
+
+
+Ejercicio 2:
+------------
+
+Desarrollar una aplicación utilizando spring MVC que permita
+encontrar el importe de una venta, los datos de entrada son:
+
+  - Nombre del producto
+  - Precio de venta
+  - Cantidad
+
+El cliente tiene un descuento de 5% si el importe de la
+venta es mayor o igual a 1000.00 Nuevos soles.
+
+
