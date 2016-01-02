@@ -33,7 +33,12 @@ public class HomeController {
 
     logger.info("Cargando la página principal.");
     
-    ModelAndView view = new ModelAndView("home","estudianteBean", new EstudianteBean());
+    EstudianteBean estudianteBean = new EstudianteBean();
+    estudianteBean.setNombre("Gustavo");
+    estudianteBean.setNota1(25);
+    estudianteBean.setNota2(16);
+    
+    ModelAndView view = new ModelAndView("home","estudianteBean", estudianteBean);
     return view;
 
   }
