@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 import pe.egcc.app.model.EstudianteBean;
 import pe.egcc.app.service.EstudianteService;
 import pe.egcc.app.validator.EstudianteValidator;
+import pe.egcc.app.validator.GustavoValidator;
 
 /**
  * 

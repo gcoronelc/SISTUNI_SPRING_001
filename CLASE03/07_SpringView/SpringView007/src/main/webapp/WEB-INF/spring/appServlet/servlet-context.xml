@@ -15,7 +15,7 @@
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
 
-  <!--  -->
+  <!-- Exportar a Excel -->
   <beans:bean class="org.springframework.web.servlet.view.XmlViewResolver">
     <beans:property name="location">
       <beans:value>/WEB-INF/spring-excel-views.xml</beans:value>

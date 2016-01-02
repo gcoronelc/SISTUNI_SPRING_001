@@ -28,11 +28,12 @@ public class ListaProductosPdfView extends AbstractPdfView {
     @SuppressWarnings("unchecked")
     List<ProductoBean> listaProductos = (List<ProductoBean>) model.get("listaProductos");
 
-    Table table = new Table(4);
+    Table table = new Table(5);
     table.addCell("ID");
     table.addCell("NOMBRE");
     table.addCell("PRECIO");
     table.addCell("STOCK");
+    table.addCell("IMPORTE");
 
     for (ProductoBean r : listaProductos) {
 
@@ -40,6 +41,7 @@ public class ListaProductosPdfView extends AbstractPdfView {
       table.addCell(r.getNombre());
       table.addCell(String.valueOf(r.getPrecio()));
       table.addCell(String.valueOf(r.getStock()));
+      table.addCell(String.valueOf(r.getPrecio() * r.getStock()));
 
     }
 

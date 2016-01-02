@@ -49,6 +49,7 @@ public class HomeController {
 
   }
 
+  
   @RequestMapping(value = "/doProcesarEstudiante.htm", method = RequestMethod.POST)
   public ModelAndView doProcesarEstudiante(EstudianteBean estudianteBean) {
 
@@ -58,7 +59,7 @@ public class HomeController {
     logger.info("Validando la notas.");
     if (!estudianteService.validar(estudianteBean)) {
       logger.info("Error en las notas.");
-      throw new RuntimeException("Las notas no son correctas.");
+      throw new RuntimeException("Las notas no son correctasssss.");
     }
     logger.info("Validación conforme.");
 

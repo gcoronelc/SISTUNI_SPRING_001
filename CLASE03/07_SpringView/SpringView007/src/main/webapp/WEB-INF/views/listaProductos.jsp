@@ -15,7 +15,11 @@
 
 	<h1>LISTA DE PRODUCTOS</h1>
 
-	<h3><a href="./exportExcel">Export to Excel</a></h3>
+	<h3>
+	   <a href="./exportExcel">Export to Excel</a> &nbsp;&nbsp;
+	   <a href="./exportExcel2">Export to Excel 2</a> &nbsp;&nbsp;
+	   <a href="./exportExcel3">Export to Excel 3</a> &nbsp;&nbsp;
+	</h3>
 
 	<table border="1px" cellpadding="8px">
 		<tr>

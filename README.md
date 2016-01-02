@@ -17,6 +17,16 @@ Curso de Spring Framework en SistemasUNI en DIC-2015.
 # SESION 02 26/DIC/2015
 
 - Revisar el ejemplo MVC 
+- El objeto Model
 - El objeto ModelAndView
+- @RequestMapping
 - @RequestParam
+- @ModelAttribute
+- @Scope
+
+
+# SESSION 03 02/ENE/2016
+
+- Libreria FORM
+- 
 
